@@ -9,7 +9,11 @@ import {
 
 function AppPro(): JSX.Element{
     return(
-        <></>
+        <SafeAreaView>
+            <View>
+                <Text>What is Life!</Text>
+            </View>
+        </SafeAreaView>
     )
 }
 

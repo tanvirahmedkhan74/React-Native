@@ -1,0 +1,28 @@
+React Native CLI Installation Guide (Ubntu22.04)
+1. Make Sure to Install -
+	Nodejs (Any Latest Version)
+	OpenJDK (11 Preferable)
+	Android Studio with SDK(34, 33 at writing time)
+	Watchman (download .deb for preferable ubuntu version)
+Installation Guideline for installation can be found in the official react native website:
+https://reactnative.dev/docs/environment-setup?guide=native
+
+2. After this Edit the ~/.bashrc file and add these at the end of the file:
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+
+write :wq to write and quit and then execute:
+	source ~/.bashrc
+
+3. Create a directory and just run -
+	npx react-native@latest YourProjectName
+->  If You are facing sudo privilege problem/ gradle conf instantiation problem run -
+	chmod 755 yourReactDirectoryName
+
+4. if everything goes right, npm start inside the project direcotory should run the program!
+
+Sometimes you need to re run the program as it crashes sometimes just exit and npm start!
